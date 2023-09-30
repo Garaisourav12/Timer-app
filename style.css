@@ -1,0 +1,148 @@
+/* universal styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--white);
+    font-family: 'Roboto';
+}
+
+/* color variable */
+:root{
+    --currenttimer: #39393e;
+    --timeup: #f0f757;
+    --mainbg: #1d1d23;
+    --cardbg: #34344a;
+    --white: #ffffff;
+}
+
+
+/* all button style */
+button{
+    border: none;
+    cursor: pointer;
+    border-radius: 26px;
+    width: 110px;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+button:hover{
+    opacity: 0.9;
+}
+
+
+/* main container */
+.main{
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--mainbg);
+}
+
+/* all card dimention */
+.card{
+    width: 45rem;
+    height: 6rem;
+    border-radius: 20px;
+    background: var(--cardbg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+}
+
+/* card middle styling */
+.card-mid{
+    /* border: 1px solid white; */
+    width: fit-content;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+/* input time card style */
+.input-card> :first-child{
+    width: 110px;
+    font-size: 1.1rem;
+    /* border: 1px solid white; */
+}
+.input-card> :last-child{
+    background-color: var(--timeup);
+    color: var(--cardbg);
+}
+
+.input-card>.time> :nth-child(odd){
+    text-decoration: underline;
+    width: 65px;
+    text-align: center;
+}
+.input-card>.time>div:focus{
+    outline: none;
+}
+
+/* timer list status styling */
+.current-timers{
+    width: 25rem;
+    border-radius: 50px;
+    background-color: var(--currenttimer);
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* timer box styling */
+.timer-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* timeup alert card style */
+.y-card{
+    width: 45rem;
+    height: 6rem;
+    border-radius: 20px;
+    background: var(--timeup);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+}
+.time-up-card> :first-child{
+    width: 110px;
+}
+.time-up-msg{
+    color: var(--cardbg);
+}
+.time-up-card> :last-child{
+    color: var(--white);
+    background-color: var(--cardbg);
+}
+
+/* timer card styling */
+.timer-card>.time> :nth-child(odd){
+    width: 65px;
+    text-align: center;
+}
+.timer-card> :first-child{
+    width: 110px;
+    font-size: 1.1rem;
+    /* border: 1px solid white; */
+}
+.timer-card> :last-child{
+    background-color: var(--timeup);
+    color: var(--cardbg);
+}
+
+
+.d-none{
+    display: none;
+}
